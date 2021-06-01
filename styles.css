@@ -184,7 +184,7 @@ span{
     text-shadow: 1px 1px 2px black;
 }
 
-@media (max-width:415px){
+@media (max-width:460px){
    
     .nav{
         display: block;
@@ -200,6 +200,9 @@ span{
         padding: 0 !important;
         margin: 0 !important;
         
+    }
+    #welcome-section{
+        width:100vw;
     }
     #welcome-section h1{
         font-size: 3rem;
@@ -250,7 +253,8 @@ span{
 
     #footer{
         background: #383838;
-        height: 25vh;
+        height: 15vh;
+        width: 100vw;
         color: white;
         text-shadow: 1px 1px 2px black;
         align-items: center;
