@@ -1,15 +1,12 @@
 *{
     font-family: 'Raleway';
 }
-body{
+html{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 .nav{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     z-index: 1;
 }
@@ -39,7 +36,7 @@ body{
 
 .nav ul li a{
    
-   height: 100%;
+    height: 100%;
     text-decoration: none;
     color: white;
     line-height: 75px;
@@ -50,7 +47,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(65deg, #383838 0%, #0b0a11 100%);
 }
@@ -75,7 +72,7 @@ body{
 
 #projects{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: #474747d3;
     color: white;
     display: flex;
@@ -182,17 +179,21 @@ span{
     background: #383838;
     color: white;
     text-align: center;
-    padding-top: 2rem;
     text-shadow: 1px 1px 2px black;
 }
+.footer-info{
+    padding-top: 2rem;
+}
 
-@media (max-width:460px){
+@media (max-width:415px){
    
+    html{
+        box-sizing: border-box;
+    }
     .nav{
         display: block;
         position: fixed;
         max-height: 30px;
-        width:100%;
         left: 0;
         top: 0;
         margin: 0;
@@ -204,9 +205,6 @@ span{
         margin: 0 !important;
         
     }
-    #welcome-section{
-        width:100%;
-    }
     #welcome-section h1{
         font-size: 3rem;
     }
@@ -217,6 +215,7 @@ span{
     #projects{
         align-items: flex-start;
         height: 1500px;
+        width: 100%;
     }
     #projects h3{
         align-self: flex-start;
@@ -227,6 +226,7 @@ span{
         height: auto;
         margin: -1rem 1rem;
         grid-gap: 2rem;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
        
@@ -236,17 +236,17 @@ span{
     }
 
     #contact{
-        width: 100vw;
+        width: 100%;
         height: 85vh;
         border-bottom: 2px solid rgba(235, 171, 23);
     }
     #contact h3{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         align-self: center;
         font-weight: 200;
         letter-spacing: 0;
         text-align: center;
-        margin: 12rem auto 2rem;
+        margin: 18rem auto 2rem;
     }
 
     .contact-a{
@@ -257,15 +257,18 @@ span{
     #footer{
         background: #383838;
         height: 15vh;
-        width: 100%;
+        width: 100vw;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
         color: white;
         text-shadow: 1px 1px 2px black;
         align-items: center;
         text-align: center;
         
     }
-   
+    
 
+   
 
     
 
