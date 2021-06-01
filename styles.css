@@ -8,6 +8,8 @@ html{
     position: fixed;
     width: 100%;
     margin: 0;
+    left: 0;
+    top: 0;
     z-index: 1;
 }
 .nav > ul{
@@ -189,6 +191,7 @@ span{
    
     html{
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
     .nav{
         display: block;
