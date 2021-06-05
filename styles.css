@@ -188,6 +188,51 @@ span{
     padding-top: 2rem;
 }
 
+@media (max-width:1025px){
+
+    .nav > ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .nav >ul > li{
+        margin:0 2rem;
+    }
+    
+    #projects{
+        height: auto;
+        padding-bottom: 6rem;
+    }
+    .proyectos{
+        display: grid;
+        grid-template-columns: 70%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .project img{
+        object-fit: fill;
+        height: 300px;
+    
+    }
+    span{
+        padding: 1rem;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #contact h3{
+        margin: 0;
+    }
+}
+
+    /*INICIO DE LOS MEDIA-QUERY'S*/
+
 @media (max-width:415px){
    
     html{
@@ -209,6 +254,10 @@ span{
         margin: 0 !important;
         
     }
+    .nav > ul > li{
+        width: 100%;
+        margin: 0;
+    }
     #welcome-section h1{
         font-size: 3rem;
     }
@@ -218,7 +267,7 @@ span{
 
     #projects{
         align-items: flex-start;
-        height: 1500px;
+        height: auto;
         width: 100%;
     }
     #projects h3{
@@ -228,7 +277,7 @@ span{
 
     .proyectos{
         height: auto;
-        margin: -1rem 1rem;
+        margin: 2rem 1rem;
         grid-gap: 2rem;
         width: 100%;
         display: grid;
@@ -250,7 +299,7 @@ span{
         font-weight: 200;
         letter-spacing: 0;
         text-align: center;
-        margin: 18rem auto 2rem;
+        margin: 8rem auto 2rem;
     }
 
     .contact-a{
@@ -269,11 +318,75 @@ span{
         align-items: center;
         text-align: center;
         
+    } 
+
+}
+
+@media (max-width:376px){
+    #welcome-section h1{
+        font-size: 2.8rem;
+        margin-top: 5rem;
     }
-    
+    #projects h3{
+        font-size: 2.3rem;
+    }
+    .project img{
+        height: 250px;
+    }
+    #contact h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    #contact a{
+        font-size: 1rem;
+    }
+}
 
-   
+@media (max-width:361px){
+    #contact h3{
+        font-size: 2.1rem;
+    }
+    #contact a{
+        font-size: 1rem;
+    }
+    .project img{
+        height: 200px;
+    }
+}
 
-    
+@media (max-width:321px){
+    .nav > ul> li{
+        margin:5px;
+    }
+    #welcome-section h1{
+        font-size: 2.3rem;
+    }
+    #projects{
+        padding:0;
+        padding-bottom: 5rem;
+        
+    }
+    #projects h3{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .project img{
+        height: 200px;
+    }
+    .proyectos{
+        grid-template-columns: 100%;
+    }
+
+    #contact h3{
+        font-size: 1.8rem;
+    }
+    #contact a{
+        font-size: 0.8rem;
+    }
+    .footer-info{
+        padding-top: 1rem;
+        
+    }
+
 
 }
